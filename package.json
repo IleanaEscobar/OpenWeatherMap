@@ -1,0 +1,19 @@
+{
+  "name": "openweathermap",
+  "version": "1.0.0",
+  "description": "OpenWeatherMap API wrapper for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IleanaEscobar/OpenWeatherMap.git"
+  },
+  "author": "Isabel Escobar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IleanaEscobar/OpenWeatherMap/issues"
+  },
+  "homepage": "https://github.com/IleanaEscobar/OpenWeatherMap#readme"
+}
