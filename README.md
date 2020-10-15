@@ -4,7 +4,9 @@
 A Node.js module for integrating with the OpenWeatherMap API. You must acquire an API key to use it.
 ## Installation
 The project is hosted on npm
+
 `npm i openweathermapwrapper`
+
 ## Usage
 
 ## Copyright
