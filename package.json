@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IleanaEscobar/OpenWeatherMap/issues"
   },
-  "homepage": "https://github.com/IleanaEscobar/OpenWeatherMap#readme"
+  "homepage": "https://github.com/IleanaEscobar/OpenWeatherMap#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
