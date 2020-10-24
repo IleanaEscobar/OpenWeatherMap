@@ -1,4 +1,4 @@
-// code to be continued...
+
 'use strict';
 const req = require('request');
 const moment = require('moment');
@@ -26,7 +26,6 @@ class OpenWeather {
     }
 
     language(lan) {
-        // http://apidev.accuweather.com/developers/languages
         // String indicating the language in which to return the resource.
         // Default value set to en-us.
 
@@ -37,7 +36,6 @@ class OpenWeather {
     details(bool) {
         // Boolean value (true or false) specifies whether or not to include the full object.
         //Default value set to false.
-        //(For location searches, details = true will return AccuWeather related details).
 
         !bool ? null : this.query.details = bool;
         return this;
