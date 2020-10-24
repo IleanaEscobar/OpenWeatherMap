@@ -22,7 +22,7 @@ forecast
 				})
 				.catch(err => {
 					console.log(err)
-				})
+				})`
 `
 
 ## Copyright
