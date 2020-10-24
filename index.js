@@ -7,14 +7,14 @@ const queryString = require('query-string');
 class OpenWeather {
     constructor(apiKey) {
         this.apiKey = apiKey;
-        this.lokey = '';
+        this.loc = '';
         this.query = {}
     }
 
-    localkey(lkey) {
-        // Unique ID that can be used to search for a specific location.
+    location(city) {
+        // Used to search for a specific location.
 
-        !lkey ? null : this.lokey = lkey;
+        !city ? null : this.loc = city;
         return this;
     }
 
@@ -51,7 +51,7 @@ class OpenWeather {
     }
 
     generateReqUrl() {
-        this.url = `https://api.openweathermap.org/data/2.5/weather?q=${this.lokey}&appid=${this.apiKey}`;
+        this.url = `https://api.openweathermap.org/data/2.5/weather?q=${this.loc}&appid=${this.apiKey}`;
         this.query ? this.url += `&${queryString.stringify(this.query)}` : this.url;
     }
 
@@ -68,3 +68,19 @@ class OpenWeather {
 }
 
 module.exports = OpenWeather
+
+const forecast = new OpenWeather('21b4c98c81ab5911942bb0d6fd5ee4c7') //Unique client code used for identification and authorization purposes. Contact AccuWeather to receive an API key.
+  
+forecast
+				.location('London')				// http://apidev.accuweather.com/developers/locationsAPIguide
+			//	.time('hourly/1hour')				// http://apidev.accuweather.com/developers/forecastsAPIguide
+				.language("ru")					// http://apidev.accuweather.com/developers/languages
+				.metric(true)					// Boolean value (true or false) that specifies to return the data in either metric (=true) or imperial units 
+				.details(true)					// Boolean value (true or false) that specifies whether or not to include a truncated version of the forecasts object or the full object (details = true)
+				.get()
+				.then(res => {
+					console.log(res)
+				})
+				.catch(err => {
+					console.log(err)
+				})
