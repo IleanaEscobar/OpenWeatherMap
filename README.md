@@ -10,6 +10,7 @@ The project is hosted on npm
 ## Usage
 Create a client and then call one of the exposed methods. 
 ```
+const OpenWeather =  require('openweathermapwrapper')
 const forecast = new OpenWeather('Api key') //Unique client code used for identification and authorization purposes. Contact OpenWeather to receive an API key.
   
 forecast
