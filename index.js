@@ -64,5 +64,5 @@ class OpenWeather {
         })
     }
 }
-
+// adding to test smth.
 module.exports = OpenWeather
