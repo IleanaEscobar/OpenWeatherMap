@@ -24,8 +24,9 @@ forecast
 				.catch(err => {
 					console.log(err)
 				})
-				```
+```
 
 
 ## Copyright
+
 Copyright (c) 2020 Isabel Escobar. See LICENSE for further details.
