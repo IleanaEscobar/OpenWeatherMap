@@ -10,7 +10,7 @@ The project is hosted on npm
 ## Usage
 Create a client and then call one of the exposed methods. 
 ```
-const forecast = new OpenWeather('21b4c98c81ab5911942bb0d6fd5ee4c7') //Unique client code used for identification and authorization purposes. Contact AccuWeather to receive an API key.
+const forecast = new OpenWeather('Api key') //Unique client code used for identification and authorization purposes. Contact OpenWeather to receive an API key.
   
 forecast
 				.location('London')		
