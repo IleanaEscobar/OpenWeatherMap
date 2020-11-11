@@ -123,4 +123,4 @@ class OpenWeather {
         })
     }
 }
-export{OpenWeather};
+module.exports = OpenWeather;
