@@ -47,33 +47,6 @@ class OpenWeather {
         return this;
     }
 
-    /* This function establishes whether the output should exclude minutes or not.
-    * @param {Boolean} bool Either true or false.
-    * @return {OpenWeather} this Returns the object itself to allow for chaining dot operators.
-    */
-    excludeMin(bool) {
-        !bool ? null : this.exclude += "minutely,";
-        return this;
-    }
-
-    /* This function establishes whether the output should exclude hours or not.
-    * @param {Boolean} bool Either true or false.
-    * @return {OpenWeather} this Returns the object itself to allow for chaining dot operators.
-    */
-    excludeHour(bool) {
-        !bool ? null : this.exclude += "hourly,";
-        return this;
-    }
-
-    /* This function establishes whether the output should exclude Days or not.
-    * @param {Boolean} bool Either true or false.
-    * @return {OpenWeather} this Returns the object itself to allow for chaining dot operators.
-    */
-    excludeDay(bool) {
-        !bool ? null : this.exclude += "daily,";
-        return this;
-    }
-
     /* This function establishes if the output should follow metric units.
     * @param {Boolean} bool Either true or false.
     * @return {OpenWeather} this Returns the object itself to allow for chaining dot operators.
