@@ -10,12 +10,11 @@ This project is hosted on npm. To install, use the command:
 Create a client and then call one of the exposed methods. 
 ```
 const OpenWeather = require('openweathermapwrapper')
-const forecast = new OpenWeather('API key') //Unique client code used for identification and authorization purposes. Contact OpenWeather to receive an API key.
+const report = new OpenWeather('API key') //Unique client code used for identification and authorization purposes. Contact OpenWeather to receive an API key.
   
-forecast
+report
 		.location('London')						
                 .details(true)	
-                .excludeDay(true)
                 .imperial(true)
                 .details(true) // Boolean value (true or false) that specifies whether or not to include a truncated version of the forecasts object or the full object (details = true)
                 .language("ru")
