@@ -67,7 +67,7 @@ Example of expected output from previous call:
 
 ## Contributions
 
-Contributions welcomed and highly encouraged! To contribute, open an issue or a pull request.
+Contributions welcomed and highly encouraged! Look to CONTRIBUTE.md for details on how to contribute.
 
 ## Copyright
 
