@@ -15,7 +15,8 @@ class OpenWeather {
         this.query = {}
         this.exclude = "&exclude=";
         this.units = "&units=";
-        this.lang = "&lang="
+        this.lang = "&lang=";
+        this.mode = "";
     }
     /* This function is used to search for a specific location.
     * @param {String} city This is a specific city.
@@ -26,6 +27,16 @@ class OpenWeather {
         !city ? null : this.loc = city;
         return this;
     }
+
+    /* This function establishes if the output should be in xml format.
+    * @param {Boolean} bool Either true or false.
+    * @return {OpenWeather} this Returns the object itself to allow for chaining dot operators.
+    */
+   xmlmode(bool) {
+       !bool ? null : this.mode += "&mode=xml";
+       return this;
+    }
+
     /* This function is used to set time units. It is currently not in use.
     * @param {String} val This is a specific unit  of time.
     * @return {OpenWeather} this Returns the object itself to allow for chaining dot operators.
