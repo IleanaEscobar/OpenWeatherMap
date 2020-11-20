@@ -6,6 +6,10 @@ A Node.js module for integrating with the OpenWeatherMap API. You must acquire a
 This project is hosted on npm. To install, use the command:
 `npm i openweathermapwrapper`
 
+If you have already installed openweathermapwrapper and notice something wrong, please make sure you have updated to the most recent version before continuing.
+
+Current version: 1.0.3
+
 ## Usage
 Create a client and then call one of the exposed methods. 
 ```
