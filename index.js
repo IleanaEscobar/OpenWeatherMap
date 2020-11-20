@@ -88,7 +88,7 @@ class OpenWeather {
     /* This function generates the request URL.
     */
     generateReqUrl() {
-            this.url = `https://api.openweathermap.org/data/2.5/weather?q=${this.loc}&appid=${this.apiKey}${this.units}${this.lang}`;
+            this.url = `https://api.openweathermap.org/data/2.5/weather?q=${this.loc}&appid=${this.apiKey}${this.units}${this.lang}${this.mode}`;
             this.query ? this.url += `&${queryString.stringify(this.query)}` : this.url;
         
     }
