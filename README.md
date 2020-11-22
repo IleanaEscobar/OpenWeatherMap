@@ -1,8 +1,13 @@
 # OpenWeatherMap API wrapper for nodeJS
 
+![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)
+
 ## About
+
 A Node.js module for integrating with the OpenWeatherMap API. You must acquire an API key to use it.
+
 ## Installation
+
 This project is hosted on npm. To install, use the command:
 `npm i openweathermapwrapper`
 
@@ -11,14 +16,16 @@ If you have already installed openweathermapwrapper and notice something wrong, 
 Current version: 1.0.3
 
 ## Usage
-Create a client and then call one of the exposed methods. 
+
+Create a client and then call one of the exposed methods.
+
 ```
 const OpenWeather = require('openweathermapwrapper')
 const report = new OpenWeather('API key') //Unique client code used for identification and authorization purposes. Contact OpenWeather to receive an API key.
-  
+
 report
-		.location('London')						
-                .details(true)	
+		.location('London')
+                .details(true)
                 .imperial(true)
                 .details(true) // Boolean value (true or false) that specifies whether or not to include a truncated version of the forecasts object or the full object (details = true)
                 .language("ru")
@@ -30,7 +37,9 @@ report
 					console.log(err)
 				})
 ```
+
 Example of expected output from previous call:
+
 ```
 {
   coord: { lon: -0.13, lat: 51.51 },

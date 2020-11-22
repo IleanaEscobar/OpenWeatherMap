@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/IleanaEscobar/OpenWeatherMap#readme",
   "dependencies": {
+    "moment": "^2.29.1",
+    "query-string": "^6.13.7",
     "request": "^2.88.2"
   }
 }
